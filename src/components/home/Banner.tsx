@@ -15,7 +15,7 @@ const Banner = () => {
                      <h2 className="title">Trade Forex and Crypto Markets <br /> <span>With Confidence</span></h2>
                      <p>Join millions to securely trade crypto and fiat on a multi-sector digital ecosystem <br /> built to empower individuals and businesses worldwide.</p>
                      <div className="banner-btn-wrap">
-                        <Link href="/register" className="btn banner-btn-primary">Start Trading</Link>
+                        <Link href="/register" className="btn banner-btn-primary">Login</Link>
                         <Link href="#services" className="btn banner-btn-secondary">Explore Our Ecosystem <i className="fas fa-arrow-right"></i></Link>
                      </div>
                   </div>
