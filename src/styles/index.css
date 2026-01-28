@@ -1,0 +1,197 @@
+@import "~bootstrap/dist/css/bootstrap";
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+@import "react-toastify/dist/ReactToastify.css";
+
+@import "../../public/assets/css/animate.min.css";
+@import "../../public/assets/css/default.css";
+@import "../../public/assets/css/fontawesome-all.min.css";
+@import "../../public/assets/css/style.css";
+@import "../../public/assets/css/responsive.css";
+
+/* Market Chart Styles */
+.market-chart-area {
+   background: linear-gradient(180deg, #0a0d14 0%, #0e1117 100%);
+   position: relative;
+}
+
+.market-chart-area .section-title .sub-title {
+   color: #44A08D;
+   font-size: 14px;
+   font-weight: 600;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+   margin-bottom: 15px;
+   display: inline-block;
+}
+
+.market-chart-area .section-title .title {
+   color: #fff;
+   font-size: 42px;
+   font-weight: 700;
+   margin-bottom: 20px;
+}
+
+.market-chart-area .section-title .title span {
+   background: linear-gradient(90deg, #44A08D 0%, #093637 100%);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+
+.market-chart-area .section-title p {
+   color: rgba(255, 255, 255, 0.7);
+   font-size: 16px;
+   line-height: 1.8;
+}
+
+.market-chart-wrapper {
+   background: rgba(14, 17, 23, 0.8);
+   border-radius: 20px;
+   padding: 30px;
+   border: 1px solid rgba(68, 160, 141, 0.2);
+}
+
+.market-pair-tabs .nav-tabs {
+   border: none;
+   gap: 10px;
+   flex-wrap: wrap;
+}
+
+.market-pair-tabs .nav-link {
+   background: rgba(255, 255, 255, 0.05);
+   border: 1px solid rgba(255, 255, 255, 0.1);
+   border-radius: 30px;
+   color: rgba(255, 255, 255, 0.7);
+   padding: 10px 25px;
+   font-size: 14px;
+   font-weight: 600;
+   transition: all 0.3s ease;
+}
+
+.market-pair-tabs .nav-link:hover {
+   background: rgba(68, 160, 141, 0.2);
+   border-color: rgba(68, 160, 141, 0.5);
+   color: #fff;
+}
+
+.market-pair-tabs .nav-link.active {
+   background: linear-gradient(90deg, #44A08D 0%, #093637 100%);
+   border-color: transparent;
+   color: #fff;
+}
+
+.chart-container-wrapper {
+   position: relative;
+   border-radius: 15px;
+   overflow: hidden;
+   background: #0e1117;
+}
+
+.chart-loading {
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   background: rgba(14, 17, 23, 0.95);
+   z-index: 10;
+}
+
+.chart-loading .spinner {
+   width: 50px;
+   height: 50px;
+   border: 3px solid rgba(68, 160, 141, 0.2);
+   border-top-color: #44A08D;
+   border-radius: 50%;
+   animation: spin 1s linear infinite;
+   margin-bottom: 15px;
+}
+
+@keyframes spin {
+   to {
+      transform: rotate(360deg);
+   }
+}
+
+.chart-loading p {
+   color: rgba(255, 255, 255, 0.7);
+   font-size: 14px;
+}
+
+.tradingview-widget-container {
+   border-radius: 15px;
+   overflow: hidden;
+}
+
+.market-info-card {
+   background: rgba(255, 255, 255, 0.03);
+   border: 1px solid rgba(255, 255, 255, 0.08);
+   border-radius: 15px;
+   padding: 30px;
+   text-align: center;
+   transition: all 0.3s ease;
+   margin-bottom: 30px;
+}
+
+.market-info-card:hover {
+   background: rgba(68, 160, 141, 0.1);
+   border-color: rgba(68, 160, 141, 0.3);
+   transform: translateY(-5px);
+}
+
+.market-info-card .icon {
+   width: 70px;
+   height: 70px;
+   background: linear-gradient(135deg, rgba(68, 160, 141, 0.2) 0%, rgba(9, 54, 55, 0.3) 100%);
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: 0 auto 20px;
+}
+
+.market-info-card .icon i {
+   font-size: 28px;
+   color: #44A08D;
+}
+
+.market-info-card h4 {
+   color: #fff;
+   font-size: 20px;
+   font-weight: 600;
+   margin-bottom: 12px;
+}
+
+.market-info-card p {
+   color: rgba(255, 255, 255, 0.6);
+   font-size: 14px;
+   line-height: 1.7;
+   margin: 0;
+}
+
+@media (max-width: 767px) {
+   .market-chart-area .section-title .title {
+      font-size: 28px;
+   }
+   
+   .market-chart-wrapper {
+      padding: 20px;
+   }
+   
+   .market-pair-tabs .nav-link {
+      padding: 8px 18px;
+      font-size: 12px;
+   }
+   
+   .chart-container-wrapper {
+      height: 450px !important;
+   }
+   
+   .tradingview-widget-container {
+      height: 450px !important;
+   }
+}
