@@ -14,7 +14,7 @@ const services = [
       id: 2,
       title: "Cryptocurrencies",
       description: "TRADE CFDS ON POPULAR CRYPTOCURRENCIES INCLUDING BITCOIN, ETHEREUM, RIPPLE AND LITECOIN AGAINST THE WORLD'S DOMINANT CURRENCIES AND BUILD YOUR CRYPTO PORTFOLIO",
-      image: "/assets/img/services/crypto.jpeg",
+      image: "/attachments/bitcoin-bg.jpeg",
       link: "/register",
    },
    {
@@ -37,6 +37,13 @@ const services = [
       title: "Xtreme",
       description: "ENTERTAINMENT AND STREAMING PLATFORM. ACCESS EXCLUSIVE CONTENT AND CONNECT WITH THE COMMUNITY",
       image: "/assets/img/services/streaming.jpeg",
+      link: "#",
+   },
+   {
+      id: 6,
+      title: "Community",
+      description: "JOIN THE CONVERSATION. CONNECT WITH FELLOW TRADERS, SHARE INSIGHTS, AND PARTICIPATE IN DISCUSSIONS TO GROW TOGETHER",
+      image: "/attachments/community-bg.jpg",
       link: "#",
    },
 ]
