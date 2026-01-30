@@ -228,7 +228,7 @@ const LeaderboardArea = () => {
                            </div>
                            <div className="totw-podium-avatar">
                               <img
-                                 src={getFlagUrl(top3[1].countryCode, 80)}
+                                 src={getFlagUrl(top3[1].countryCode)}
                                  alt={top3[1].country}
                                  width={60}
                                  height={40}
@@ -253,7 +253,7 @@ const LeaderboardArea = () => {
                            </div>
                            <div className="totw-podium-avatar">
                               <img
-                                 src={getFlagUrl(top3[0].countryCode, 80)}
+                                 src={getFlagUrl(top3[0].countryCode)}
                                  alt={top3[0].country}
                                  width={70}
                                  height={47}
@@ -277,7 +277,7 @@ const LeaderboardArea = () => {
                            </div>
                            <div className="totw-podium-avatar">
                               <img
-                                 src={getFlagUrl(top3[2].countryCode, 80)}
+                                 src={getFlagUrl(top3[2].countryCode)}
                                  alt={top3[2].country}
                                  width={60}
                                  height={40}
@@ -312,7 +312,7 @@ const LeaderboardArea = () => {
                         </div>
                         <div className="totw-cell country">
                            <img
-                              src={getFlagUrl(currentUser.countryCode, 32)}
+                              src={getFlagUrl(currentUser.countryCode)}
                               alt={currentUser.country}
                               width={24}
                               height={16}
@@ -366,7 +366,7 @@ const LeaderboardArea = () => {
                            </div>
                            <div className="totw-cell country">
                               <img
-                                 src={getFlagUrl(trader.countryCode, 32)}
+                                 src={getFlagUrl(trader.countryCode)}
                                  alt={trader.country}
                                  width={24}
                                  height={16}

@@ -35,8 +35,8 @@ export interface FAQ {
 
 // Competition metadata
 export const competitionInfo = {
-   title: "Trader of the Week",
-   description: "Trader of the Week rewards the most active and disciplined traders on WorldStreet. Every week, traders compete based on verified trading activity. The top-ranked traders win cash, gadgets, and tools built for the next generation of global traders.",
+   title: "Compete. Trade. Win.",
+   description: "Every week, top traders on WorldStreet compete for glory and rewards. Trade with discipline, climb the leaderboard, and walk away with cash prizes, premium gadgets, and exclusive tools built for champions.",
    weekStart: "Sunday 00:00 UTC",
    weekEnd: "Saturday 23:59 UTC",
 };
@@ -369,9 +369,9 @@ const leaderboard_data: Trader[] = [
 
 export default leaderboard_data;
 
-// Helper function to get flag URL from flagcdn
-export const getFlagUrl = (countryCode: string, size: number = 32): string => {
-   return `https://flagcdn.com/w${size}/${countryCode.toLowerCase()}.png`;
+// Helper function to get flag URL from local images
+export const getFlagUrl = (countryCode: string): string => {
+   return `/assets/img/flags/${countryCode.toLowerCase()}.png`;
 };
 
 // Helper to categorize assets
