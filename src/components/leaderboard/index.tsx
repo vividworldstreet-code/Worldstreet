@@ -1,6 +1,5 @@
 "use client"
 import Header from "@/layout/headers/Header"
-import Breadcrumb from "../common/Breadcrumb"
 import HeroArea from "./HeroArea"
 import PrizesArea from "./PrizesArea"
 import HowToParticipate from "./HowToParticipate"
@@ -11,11 +10,10 @@ const Leaderboard = () => {
       <>
          <Header />
          <main className="fix">
-            <Breadcrumb title="Trader of the Week" />
             <HeroArea />
             <PrizesArea />
-            <HowToParticipate />
             <LeaderboardArea />
+            <HowToParticipate />
          </main>
       </>
    )
